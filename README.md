@@ -5,7 +5,7 @@ The challenge was done using django due to little familiarity with react and sho
 
 - The project is accessible via heroku.
 
-# [![Open in Heroku](https://icon-icons.com/icons2/2108/PNG/64/heroku_icon_130912.png)](https://challenge-chart.herokuapp.com/)
+# >>> [![Open in Heroku](https://icon-icons.com/icons2/2108/PNG/64/heroku_icon_130912.png)](https://challenge-chart.herokuapp.com/) <<<
 
 # Requiremests
 - Linux

@@ -1,0 +1,13 @@
+footer{
+background:#E6E6E6;
+width: 100%;
+height: 60px;
+position: absolute;
+bottom: 0;
+left: 0;
+}
+
+#footerb{
+margin-left: 50px;
+margin-top: 17px;
+}

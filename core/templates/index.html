@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=UTF-8>
+    <title>Title</title>
+    <!-- BOOTSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- SANS PRO-->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+    <link href="{% static 'css/header.css' %}" rel='stylesheet' type='text/css'>
+    <link href="{% static 'css/code.css' %}" rel='stylesheet' type='text/css'>
+    <link href="{% static 'css/chart.css' %}" rel='stylesheet' type='text/css'>
+    <link href="{% static 'css/footer.css' %}" rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+
+<header>
+    <p id="titleH">Matheus Monteiro's Challenge</p>
+</header>
+
+    <!--start codetext-->
+    <div id="code" >
+        <textarea id="Text" rows="4" cols="50">
+{type: 'start', timestamp: 1519780251293, select: ['min_response_time', 'max_response_time'], group: ['os', 'browser']}
+{type: 'span', timestamp: 1519780251293, begin: 1519862400000, end: 1519862460000}
+{type: 'data', timestamp: 1519780251293, os: 'linux', browser: 'chrome', min_response_time: 0.1, max_response_time: 1.3}
+{type: 'data', timestamp: 1519780251293, os: 'mac', browser: 'chrome', min_response_time: 0.2, max_response_time: 1.2}
+{type: 'data', timestamp: 1519780251293, os: 'mac', browser: 'firefox', min_response_time: 0.3, max_response_time: 1.2}
+{type: 'data', timestamp: 1519780251293, os: 'linux', browser: 'firefox', min_response_time: 0.1, max_response_time: 1.0}
+{type: 'data', timestamp: 1519780260201, os: 'linux', browser: 'chrome', min_response_time: 0.2, max_response_time: 0.9}
+{type: 'data', timestamp: 1519780260201, os: 'mac', browser: 'chrome', min_response_time: 0.1, max_response_time: 1.0}
+{type: 'data', timestamp: 1519780260201, os: 'mac', browser: 'firefox', min_response_time: 0.2, max_response_time: 1.1}
+{type: 'data', timestamp: 1519780260201, os: 'linux', browser: 'firefox', min_response_time: 0.3, max_response_time: 1.4}
+{type: 'stop', timestamp: 1519780260201}</textarea>
+    </div>
+
+<!-- end codetext-->
+
+
+    <!--chart space-->
+    <div id="ch">
+        <canvas id="myChart" height="150" width="646"></canvas>
+    </div>
+    <!--end chart space-->
+
+
+    <!--rodape-->
+    <footer id="footer">
+        <button id="footerb" class="btn btn-primary btn-sm" onclick="main()">GENERATE CHART</button>
+    </footer>
+    <!--end rodape-->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script type="text/javascript" src="{% static 'js/timestemp2date.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/swcase.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/charts.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/textArea.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+
+    <script>main()</script>
+
+</body>
+</html>
+

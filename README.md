@@ -1,7 +1,7 @@
 # Plotting a chart(Solution)
 The challenge was done using django due to little familiarity with react and short time to complete the challenge.
 
-#Deploy heroku
+# Deploy heroku
 
 - The project is accessible via heroku.
 
